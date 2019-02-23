@@ -26,10 +26,12 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html">Amorita Boutique <br>
@@ -47,11 +49,19 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
                     <li class="nav-item active"><a href="about.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="room.html" aria-haspopup="true">Rooms & Suites</a>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="room.html" aria-haspopup="true">Rooms</a>
                     </li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Tours</a></li>
-                    <li class="nav-item"><a href="contact.html" class="nav-link">Services</a></li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" href="room.html" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tours</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown04">
+                            <a class="dropdown-item" href="toursDaily-1.html">Daily Tours</a>
+                            <a class="dropdown-item" href="ToursHaLong-1.html">HaLong Bay Cruises</a>
+                            <a class="dropdown-item" href="ToursSapa-1.html">Sapa tours</a>
+                            <a class="dropdown-item" href="ToursPackage-1.html">Packages Tours & Offer</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
                 </ul>
             </div>
         </div>
@@ -105,16 +115,26 @@
                     <div class="text-inner align-self-start">
                         <span class="subheading">About Us</span>
                         <h3 class="heading" style="font-family: 'Dancing Script', cursive;font-size:44px;">Welcome to our Hotel</h3>
-                        <p >Rooms at the Amorita Boutique are fitted with hardwood furniture. Each room is equipped with a minibar and refrigerator. En suite bathrooms have hot shower facilities.The hotel provides currency exchange and car rental services. A tour desk can help with travel and sightseeing arrangements.Guests can have their meals at the on-site restaurant, which serves a variety of Vietnamese dishes.Hoan Kiem is a great choice for travelers interested in shopping, street food and city walks.This is our guests' favorite part of Hanoi, according to independent reviews
+                        <p>Rooms at the Amorita Boutique are fitted with hardwood furniture. Each room is equipped with a minibar and refrigerator. En suite bathrooms have hot shower facilities.The hotel provides currency exchange and car rental services. A tour desk can help with travel and sightseeing arrangements.Guests can have their meals at the on-site restaurant, which serves a variety of Vietnamese dishes.Hoan Kiem is a great choice for travelers interested in shopping, street food and city walks.This is our guests' favorite part of Hanoi, according to independent reviews
                         </p>
                         <p>We speak your language!
                             Amorita Boutique Hotel has been welcoming Booking.com guests <strong><i>since 18 April, 2017</i></strong></p>
+                        
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <button id="btnAlert" class="btn btn-primary" style="cursor: pointer">gop y cho chung toi</button>
+                        <script>
+                            $("#btnAlert").click(e=>{
+                                swal.fire({
+                                    title:'thank you!',
+                                    text:'You clicked the button',
+                                    type:'success'
+                                })
+                            });
+                        </script>
     <section class="ftco-section testimony-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -234,7 +254,10 @@
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
                         <h2 class="ftco-heading-2">Amorita Boutique</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <pre style="color: white;font-size: 17px">
+"We do everything to serve you better" 
+                                Mr Hung
+                        </pre>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                             <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                             <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -257,8 +280,12 @@
                 </div>
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Newsletter</h2>
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
+                        <h2 class="ftco-heading-2">POLICIES & REGULATIONS</h2>
+                        <ul style="list-style-type:square">
+                            <li>Terms and Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>Payments & method</li>
+                        </ul>
                         <form action="#" class="subscribe-form">
                             <div class="form-group">
                                 <span class="icon icon-paper-plane"></span>
@@ -270,12 +297,11 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-
                     <p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;<script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">NgocTien</a>
+                        </script> All rights reserved | This Website is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">NgocTien</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -290,7 +316,8 @@
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
