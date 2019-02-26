@@ -8,4 +8,11 @@ $(document).ready(function () {
             }
         })
     });
+    $("#btnPost").click(function () {
+        Swal.fire(
+            'Thank you :)',
+            'We will review your comment!',
+            'success'
+        )
+    });
 });
