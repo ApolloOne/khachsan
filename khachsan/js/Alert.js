@@ -15,4 +15,11 @@ $(document).ready(function () {
             'success'
         )
     });
+    $("#booktour").click(function(){
+        Swal.fire(
+            'Please tell us about your tour via facebook message :)',
+            '',
+            'success'
+        )
+    })
 });
